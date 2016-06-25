@@ -1,0 +1,20 @@
+--- sshd_config.orig	2009-03-25 13:22:50.000000000 -0400
++++ sshd_config	2009-05-21 10:50:20.000000000 -0400
+@@ -23,7 +23,7 @@
+ 
+ # Authentication:
+ LoginGraceTime 120
+-PermitRootLogin yes
++PermitRootLogin no
+ StrictModes yes
+ 
+ RSAAuthentication yes
+@@ -67,7 +67,7 @@
+ #UseLogin no
+ 
+ #MaxStartups 10:30:60
+-#Banner /etc/issue.net
++Banner /etc/login_banner
+ 
+ # Allow client to pass locale environment variables
+ AcceptEnv LANG LC_*

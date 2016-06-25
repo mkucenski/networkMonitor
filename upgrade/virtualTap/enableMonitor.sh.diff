@@ -1,0 +1,40 @@
+--- enableMonitor.sh.orig	2009-05-20 14:21:48.000000000 -0400
++++ enableMonitor.sh	2009-05-20 14:26:33.000000000 -0400
+@@ -1,6 +1,15 @@
+ #! /bin/bash
+ # Author: Matthew A. Kucenski
+ 
++# Read options and common commands from the configuration file
++CONF="/usr/local/etc/netmon.conf"
++if [ -r "$CONF" ]; then
++	. "$CONF"
++else
++	echo "`basename "$0"`: Unable to read configuration file: $CONF"
++	exit 2
++fi
++
+ NETMON_S="21"
+ NETMONWATCH_S="20"
+ BONDNICS_S="20"
+@@ -15,11 +24,19 @@
+ for level in 0 1 6; do
+ 	ln -sv ../init.d/netmon /etc/rc${level}.d/K${NETMON_K}netmon
+ 	ln -sv ../init.d/netmonwatch /etc/rc${level}.d/K${NETMONWATCH_K}netmonwatch
+-	ln -sv ../init.d/bondNICs /etc/rc${level}.d/K${BONDNICS_K}bondNICs
++	if [ ${PASSTHRU-FALSE} == "TRUE" ]; then
++		ln -sv ../init.d/bridgeNICs /etc/rc${level}.d/K${BONDNICS_K}bridgeNICs
++	else
++		ln -sv ../init.d/bondNICs /etc/rc${level}.d/K${BONDNICS_K}bondNICs
++	fi
+ done
+ for level in 2 3 4 5; do
+ 	ln -sv ../init.d/netmon /etc/rc${level}.d/S${NETMON_S}netmon
+ 	ln -sv ../init.d/netmonwatch /etc/rc${level}.d/S${NETMONWATCH_S}netmonwatch
+-	ln -sv ../init.d/bondNICs /etc/rc${level}.d/S${BONDNICS_S}bondNICs
++	if [ ${PASSTHRU-FALSE} == "TRUE" ]; then
++		ln -sv ../init.d/bridgeNICs /etc/rc${level}.d/S${BONDNICS_S}bridgeNICs
++	else
++		ln -sv ../init.d/bondNICs /etc/rc${level}.d/S${BONDNICS_S}bondNICs
++	fi
+ done
+ 

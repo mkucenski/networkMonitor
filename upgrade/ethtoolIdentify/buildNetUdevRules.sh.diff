@@ -1,0 +1,48 @@
+--- buildNetUdevRules.sh.orig	2009-05-20 15:09:22.000000000 -0400
++++ buildNetUdevRules.sh	2009-05-21 12:02:51.000000000 -0400
+@@ -4,9 +4,18 @@
+ FILE="/etc/udev/rules.d/010_netinterface.rules"
+ 
+ echo "" > /dev/stderr
+-echo "WARNING: Channel bonding masks one of the slave interface MAC addresses.  Channel bonding must be disabled (via /etc/init.d/bondNICs stop) prior to running this script." > /dev/stderr
++echo "WARNING: Channel bonding masks one of the slave interface MAC addresses."
++echo "         Channel bonding must be disabled (via /etc/init.d/bondNICs stop)"
++echo "         prior to running this script." > /dev/stderr
+ echo "" > /dev/stderr
+ 
++echo "You will be asked to identify and name each of the network interfaces on"
++echo "this system. 'adm0' will be used for administrative access. 'tap0' and"
++echo "'tap1' will be connected to the network tap for packet capture.  If"
++echo "supported, the network activity light will blink to assist in identifying"
++echo "the interface."
++echo ""
++
+ CONTINUE="no"
+ echo "WARNING: $FILE will be erased and rebuilt!"
+ echo ""
+@@ -19,17 +28,24 @@
+ 
+ 	echo "Found the following hardware addresses:"
+ 	for x in $HWADDRS; do
+-		echo "   $x"
++		IF=`ifconfig -a | grep -i $x | sed -r 's/^([^[:space:]]+).*/\1/'`
++		echo "   $x ($IF)"
+ 	done
++	echo ""
+ 
+ 	rm "$FILE"
+ 	for x in $HWADDRS; do
++		IF=`ifconfig -a | grep -i $x | sed -r 's/^([^[:space:]]+).*/\1/'`
++
+ 		NAME=""
+ 		while 	[ "$NAME" != "adm0" ] && \
+ 			[ "$NAME" != "tap0" ] && \
+ 			[ "$NAME" != "tap1" ] && \
+ 			[ "$NAME" != "skip" ]; do
++			ethtool --identify $IF 30 &
++			BLINKPID=$!
+ 			read -p "Enter new interface name for hardware address $x: (adm0/tap0/tap1/skip) " NAME
++			kill $BLINKPID > /dev/null 2>&1
+ 		done
+ 		if [ "$NAME" != "skip" ]; then
+ 			echo "SUBSYSTEM==\"net\", DRIVERS==\"?*\", ATTR{address}==\"$x\", NAME=\"$NAME\"" >> "$FILE"

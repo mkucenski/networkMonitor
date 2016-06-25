@@ -1,0 +1,13 @@
+--- disableMonitor.sh.orig	2009-05-20 14:21:28.000000000 -0400
++++ disableMonitor.sh	2009-05-20 14:24:42.000000000 -0400
+@@ -3,8 +3,9 @@
+ 
+ stopMonitor.sh
+ 
+-echo "Deleting netmon, netmonwatch, and bondNICs init scripts in /etc/rc*.d/..."
++echo "Deleting netmon, netmonwatch, and bond/bridgeNICs init scripts in /etc/rc*.d/..."
+ find /etc/rc*.d/ -name "*netmon" -exec rm {} \;
+ find /etc/rc*.d/ -name "*netmonwatch" -exec rm {} \;
++find /etc/rc*.d/ -name "*bridgeNICs" -exec rm {} \;
+ find /etc/rc*.d/ -name "*bondNICs" -exec rm {} \;
+ 

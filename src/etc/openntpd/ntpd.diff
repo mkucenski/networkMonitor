@@ -1,0 +1,16 @@
+15,18c15,24
+< server 0.debian.pool.ntp.org
+< server 1.debian.pool.ntp.org
+< server 2.debian.pool.ntp.org
+< server 3.debian.pool.ntp.org
+---
+> #server 0.debian.pool.ntp.org
+> #server 1.debian.pool.ntp.org
+> #server 2.debian.pool.ntp.org
+> #server 3.debian.pool.ntp.org
+> 
+> server time-a.nist.gov
+> server time-b.nist.gov
+> server time.nist.gov
+> server time-nw.nist.gov
+> 

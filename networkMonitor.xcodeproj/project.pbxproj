@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		9ABDEB721D1F01AE00BEAF9F /* menu.lst.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = menu.lst.diff; sourceTree = "<group>"; };
+		9ABDEB731D1F01AE00BEAF9F /* menu.lst.orig */ = {isa = PBXFileReference; lastKnownFileType = text; path = menu.lst.orig; sourceTree = "<group>"; };
+		9ABDEB761D1F01AE00BEAF9F /* acpid.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = acpid.diff; sourceTree = "<group>"; };
+		9ABDEB771D1F01AE00BEAF9F /* acpid.orig */ = {isa = PBXFileReference; lastKnownFileType = text; path = acpid.orig; sourceTree = "<group>"; };
+		9ABDEB781D1F01AE00BEAF9F /* fstab.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = fstab.diff; sourceTree = "<group>"; };
+		9ABDEB791D1F01AE00BEAF9F /* fstab.orig */ = {isa = PBXFileReference; lastKnownFileType = text; path = fstab.orig; sourceTree = "<group>"; };
+		9ABDEB7A1D1F01AE00BEAF9F /* inittab.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = inittab.diff; sourceTree = "<group>"; };
+		9ABDEB7B1D1F01AE00BEAF9F /* inittab.orig */ = {isa = PBXFileReference; lastKnownFileType = text; path = inittab.orig; sourceTree = "<group>"; };
+		9ABDEB7C1D1F01AE00BEAF9F /* login_banner */ = {isa = PBXFileReference; lastKnownFileType = text; path = login_banner; sourceTree = "<group>"; };
+		9ABDEB7E1D1F01AE00BEAF9F /* aliases.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = aliases.diff; sourceTree = "<group>"; };
+		9ABDEB7F1D1F01AE00BEAF9F /* aliases.orig */ = {isa = PBXFileReference; lastKnownFileType = text; path = aliases.orig; sourceTree = "<group>"; };
+		9ABDEB801D1F01AE00BEAF9F /* blacklist.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = blacklist.diff; sourceTree = "<group>"; };
+		9ABDEB811D1F01AE00BEAF9F /* blacklist.orig */ = {isa = PBXFileReference; lastKnownFileType = text; path = blacklist.orig; sourceTree = "<group>"; };
+		9ABDEB821D1F01AE00BEAF9F /* netmon.conf */ = {isa = PBXFileReference; lastKnownFileType = text; path = netmon.conf; sourceTree = "<group>"; };
+		9ABDEB841D1F01AE00BEAF9F /* ntpd.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = ntpd.diff; sourceTree = "<group>"; };
+		9ABDEB851D1F01AE00BEAF9F /* ntpd.orig */ = {isa = PBXFileReference; lastKnownFileType = text; path = ntpd.orig; sourceTree = "<group>"; };
+		9ABDEB861D1F01AE00BEAF9F /* sdb.out */ = {isa = PBXFileReference; lastKnownFileType = text; path = sdb.out; sourceTree = "<group>"; };
+		9ABDEB881D1F01AE00BEAF9F /* sshd_config.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = sshd_config.diff; sourceTree = "<group>"; };
+		9ABDEB891D1F01AE00BEAF9F /* sshd_config.orig */ = {isa = PBXFileReference; lastKnownFileType = text; path = sshd_config.orig; sourceTree = "<group>"; };
+		9ABDEB8B1D1F01AE00BEAF9F /* 010_usbdevices.rules */ = {isa = PBXFileReference; lastKnownFileType = text; path = 010_usbdevices.rules; sourceTree = "<group>"; };
+		9ABDEB8D1D1F01AE00BEAF9F /* bondNICs */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = bondNICs; sourceTree = "<group>"; };
+		9ABDEB8E1D1F01AE00BEAF9F /* bridgeNICs */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = bridgeNICs; sourceTree = "<group>"; };
+		9ABDEB8F1D1F01AE00BEAF9F /* netmon */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = netmon; sourceTree = "<group>"; };
+		9ABDEB901D1F01AE00BEAF9F /* netmonwatch */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = netmonwatch; sourceTree = "<group>"; };
+		9ABDEB911D1F01AE00BEAF9F /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = install.sh; path = src/install.sh; sourceTree = "<group>"; };
+		9ABDEB931D1F01AE00BEAF9F /* bondNICs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = bondNICs.sh; sourceTree = "<group>"; };
+		9ABDEB941D1F01AE00BEAF9F /* bridgeNICs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = bridgeNICs.sh; sourceTree = "<group>"; };
+		9ABDEB951D1F01AE00BEAF9F /* buildNetUdevRules.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = buildNetUdevRules.sh; sourceTree = "<group>"; };
+		9ABDEB961D1F01AE00BEAF9F /* changeTime.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = changeTime.sh; sourceTree = "<group>"; };
+		9ABDEB971D1F01AE00BEAF9F /* checkFootprints.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = checkFootprints.sh; sourceTree = "<group>"; };
+		9ABDEB981D1F01AE00BEAF9F /* disableMonitor.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = disableMonitor.sh; sourceTree = "<group>"; };
+		9ABDEB991D1F01AE00BEAF9F /* disableNTP.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = disableNTP.sh; sourceTree = "<group>"; };
+		9ABDEB9A1D1F01AE00BEAF9F /* enableMonitor.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = enableMonitor.sh; sourceTree = "<group>"; };
+		9ABDEB9B1D1F01AE00BEAF9F /* enableNTP.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = enableNTP.sh; sourceTree = "<group>"; };
+		9ABDEB9C1D1F01AE00BEAF9F /* monitorTime.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = monitorTime.sh; sourceTree = "<group>"; };
+		9ABDEB9D1D1F01AE00BEAF9F /* netmon.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = netmon.sh; sourceTree = "<group>"; };
+		9ABDEB9E1D1F01AE00BEAF9F /* netmonwatch-worker.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "netmonwatch-worker.sh"; sourceTree = "<group>"; };
+		9ABDEB9F1D1F01AE00BEAF9F /* netmonwatch.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = netmonwatch.sh; sourceTree = "<group>"; };
+		9ABDEBA01D1F01AE00BEAF9F /* networkTime.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = networkTime.sh; sourceTree = "<group>"; };
+		9ABDEBA11D1F01AE00BEAF9F /* restartMonitor.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = restartMonitor.sh; sourceTree = "<group>"; };
+		9ABDEBA21D1F01AE00BEAF9F /* saveBuildImage.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = saveBuildImage.sh; sourceTree = "<group>"; };
+		9ABDEBA31D1F01AE00BEAF9F /* startMonitor.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = startMonitor.sh; sourceTree = "<group>"; };
+		9ABDEBA41D1F01AE00BEAF9F /* stopMonitor.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = stopMonitor.sh; sourceTree = "<group>"; };
+		9ABDEBA51D1F01AE00BEAF9F /* updateDebian.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = updateDebian.sh; sourceTree = "<group>"; };
+		9ABDEBA61D1F01AE00BEAF9F /* usbConsole.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = usbConsole.sh; sourceTree = "<group>"; };
+		9ABDEBA71D1F01AE00BEAF9F /* verifyHashes.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verifyHashes.sh; sourceTree = "<group>"; };
+		9ABDEBA81D1F01AE00BEAF9F /* wipeData.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = wipeData.sh; sourceTree = "<group>"; };
+		9ABDEBAC1D1F01CD00BEAF9F /* addEthtoolIdentify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = addEthtoolIdentify.sh; sourceTree = "<group>"; };
+		9ABDEBAD1D1F01CD00BEAF9F /* buildNetUdevRules.sh.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = buildNetUdevRules.sh.diff; sourceTree = "<group>"; };
+		9ABDEBAF1D1F01CD00BEAF9F /* addTCPOnlyPenTrap.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = addTCPOnlyPenTrap.sh; sourceTree = "<group>"; };
+		9ABDEBB01D1F01CD00BEAF9F /* netmon.conf.default.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = netmon.conf.default.diff; sourceTree = "<group>"; };
+		9ABDEBB11D1F01CD00BEAF9F /* netmon.conf.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = netmon.conf.diff; sourceTree = "<group>"; };
+		9ABDEBB21D1F01CD00BEAF9F /* netmon.sh.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = netmon.sh.diff; sourceTree = "<group>"; };
+		9ABDEBB41D1F01CD00BEAF9F /* addExperimentalVirtualTap.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = addExperimentalVirtualTap.sh; sourceTree = "<group>"; };
+		9ABDEBB51D1F01CD00BEAF9F /* bridgeNICs */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = bridgeNICs; sourceTree = "<group>"; };
+		9ABDEBB61D1F01CD00BEAF9F /* bridgeNICs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = bridgeNICs.sh; sourceTree = "<group>"; };
+		9ABDEBB71D1F01CD00BEAF9F /* disableMonitor.sh.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = disableMonitor.sh.diff; sourceTree = "<group>"; };
+		9ABDEBB81D1F01CD00BEAF9F /* enableMonitor.sh.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = enableMonitor.sh.diff; sourceTree = "<group>"; };
+		9ABDEBB91D1F01CD00BEAF9F /* netmon.conf.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = netmon.conf.diff; sourceTree = "<group>"; };
+		9ABDEBBA1D1F01CD00BEAF9F /* netmon.sh.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = netmon.sh.diff; sourceTree = "<group>"; };
+		9ABDEBBB1D1F01CD00BEAF9F /* startMonitor.sh.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = startMonitor.sh.diff; sourceTree = "<group>"; };
+		9ABDEBBC1D1F01CD00BEAF9F /* stopMonitor.sh.diff */ = {isa = PBXFileReference; lastKnownFileType = text; path = stopMonitor.sh.diff; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		9ABDEB691D1F016400BEAF9F = {
+			isa = PBXGroup;
+			children = (
+				9ABDEBA91D1F01B700BEAF9F /* src */,
+				9ABDEBAA1D1F01CD00BEAF9F /* upgrade */,
+			);
+			sourceTree = "<group>";
+		};
+		9ABDEB701D1F01AE00BEAF9F /* boot */ = {
+			isa = PBXGroup;
+			children = (
+				9ABDEB711D1F01AE00BEAF9F /* grub */,
+			);
+			name = boot;
+			path = src/boot;
+			sourceTree = "<group>";
+		};
+		9ABDEB711D1F01AE00BEAF9F /* grub */ = {
+			isa = PBXGroup;
+			children = (
+				9ABDEB721D1F01AE00BEAF9F /* menu.lst.diff */,
+				9ABDEB731D1F01AE00BEAF9F /* menu.lst.orig */,
+			);
+			path = grub;
+			sourceTree = "<group>";
+		};
+		9ABDEB741D1F01AE00BEAF9F /* etc */ = {
+			isa = PBXGroup;
+			children = (
+				9ABDEB751D1F01AE00BEAF9F /* default */,
+				9ABDEB781D1F01AE00BEAF9F /* fstab.diff */,
+				9ABDEB791D1F01AE00BEAF9F /* fstab.orig */,
+				9ABDEB7A1D1F01AE00BEAF9F /* inittab.diff */,
+				9ABDEB7B1D1F01AE00BEAF9F /* inittab.orig */,
+				9ABDEB7C1D1F01AE00BEAF9F /* login_banner */,
+				9ABDEB7D1D1F01AE00BEAF9F /* modprobe.d */,
+				9ABDEB821D1F01AE00BEAF9F /* netmon.conf */,
+				9ABDEB831D1F01AE00BEAF9F /* openntpd */,
+				9ABDEB861D1F01AE00BEAF9F /* sdb.out */,
+				9ABDEB871D1F01AE00BEAF9F /* ssh */,
+				9ABDEB8A1D1F01AE00BEAF9F /* udev */,
+			);
+			name = etc;
+			path = src/etc;
+			sourceTree = "<group>";
+		};
+		9ABDEB751D1F01AE00BEAF9F /* default */ = {
+			isa = PBXGroup;
+			children = (
+				9ABDEB761D1F01AE00BEAF9F /* acpid.diff */,
+				9ABDEB771D1F01AE00BEAF9F /* acpid.orig */,
+			);
+			path = default;
+			sourceTree = "<group>";
+		};
+		9ABDEB7D1D1F01AE00BEAF9F /* modprobe.d */ = {
+			isa = PBXGroup;
+			children = (
+				9ABDEB7E1D1F01AE00BEAF9F /* aliases.diff */,
+				9ABDEB7F1D1F01AE00BEAF9F /* aliases.orig */,
+				9ABDEB801D1F01AE00BEAF9F /* blacklist.diff */,
+				9ABDEB811D1F01AE00BEAF9F /* blacklist.orig */,
+			);
+			path = modprobe.d;
+			sourceTree = "<group>";
+		};
+		9ABDEB831D1F01AE00BEAF9F /* openntpd */ = {
+			isa = PBXGroup;
+			children = (
+				9ABDEB841D1F01AE00BEAF9F /* ntpd.diff */,
+				9ABDEB851D1F01AE00BEAF9F /* ntpd.orig */,
+			);
+			path = openntpd;
+			sourceTree = "<group>";
+		};
+		9ABDEB871D1F01AE00BEAF9F /* ssh */ = {
+			isa = PBXGroup;
+			children = (
+				9ABDEB881D1F01AE00BEAF9F /* sshd_config.diff */,
+				9ABDEB891D1F01AE00BEAF9F /* sshd_config.orig */,
+			);
+			path = ssh;
+			sourceTree = "<group>";
+		};
+		9ABDEB8A1D1F01AE00BEAF9F /* udev */ = {
+			isa = PBXGroup;
+			children = (
+				9ABDEB8B1D1F01AE00BEAF9F /* 010_usbdevices.rules */,
+			);
+			path = udev;
+			sourceTree = "<group>";
+		};
+		9ABDEB8C1D1F01AE00BEAF9F /* init.d */ = {
+			isa = PBXGroup;
+			children = (
+				9ABDEB8D1D1F01AE00BEAF9F /* bondNICs */,
+				9ABDEB8E1D1F01AE00BEAF9F /* bridgeNICs */,
+				9ABDEB8F1D1F01AE00BEAF9F /* netmon */,
+				9ABDEB901D1F01AE00BEAF9F /* netmonwatch */,
+			);
+			name = init.d;
+			path = src/init.d;
+			sourceTree = "<group>";
+		};
+		9ABDEB921D1F01AE00BEAF9F /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				9ABDEB931D1F01AE00BEAF9F /* bondNICs.sh */,
+				9ABDEB941D1F01AE00BEAF9F /* bridgeNICs.sh */,
+				9ABDEB951D1F01AE00BEAF9F /* buildNetUdevRules.sh */,
+				9ABDEB961D1F01AE00BEAF9F /* changeTime.sh */,
+				9ABDEB971D1F01AE00BEAF9F /* checkFootprints.sh */,
+				9ABDEB981D1F01AE00BEAF9F /* disableMonitor.sh */,
+				9ABDEB991D1F01AE00BEAF9F /* disableNTP.sh */,
+				9ABDEB9A1D1F01AE00BEAF9F /* enableMonitor.sh */,
+				9ABDEB9B1D1F01AE00BEAF9F /* enableNTP.sh */,
+				9ABDEB9C1D1F01AE00BEAF9F /* monitorTime.sh */,
+				9ABDEB9D1D1F01AE00BEAF9F /* netmon.sh */,
+				9ABDEB9E1D1F01AE00BEAF9F /* netmonwatch-worker.sh */,
+				9ABDEB9F1D1F01AE00BEAF9F /* netmonwatch.sh */,
+				9ABDEBA01D1F01AE00BEAF9F /* networkTime.sh */,
+				9ABDEBA11D1F01AE00BEAF9F /* restartMonitor.sh */,
+				9ABDEBA21D1F01AE00BEAF9F /* saveBuildImage.sh */,
+				9ABDEBA31D1F01AE00BEAF9F /* startMonitor.sh */,
+				9ABDEBA41D1F01AE00BEAF9F /* stopMonitor.sh */,
+				9ABDEBA51D1F01AE00BEAF9F /* updateDebian.sh */,
+				9ABDEBA61D1F01AE00BEAF9F /* usbConsole.sh */,
+				9ABDEBA71D1F01AE00BEAF9F /* verifyHashes.sh */,
+				9ABDEBA81D1F01AE00BEAF9F /* wipeData.sh */,
+			);
+			name = scripts;
+			path = src/scripts;
+			sourceTree = "<group>";
+		};
+		9ABDEBA91D1F01B700BEAF9F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9ABDEB701D1F01AE00BEAF9F /* boot */,
+				9ABDEB741D1F01AE00BEAF9F /* etc */,
+				9ABDEB8C1D1F01AE00BEAF9F /* init.d */,
+				9ABDEB911D1F01AE00BEAF9F /* install.sh */,
+				9ABDEB921D1F01AE00BEAF9F /* scripts */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		9ABDEBAA1D1F01CD00BEAF9F /* upgrade */ = {
+			isa = PBXGroup;
+			children = (
+				9ABDEBAB1D1F01CD00BEAF9F /* ethtoolIdentify */,
+				9ABDEBAE1D1F01CD00BEAF9F /* tcpOnlyPenTrap */,
+				9ABDEBB31D1F01CD00BEAF9F /* virtualTap */,
+			);
+			path = upgrade;
+			sourceTree = "<group>";
+		};
+		9ABDEBAB1D1F01CD00BEAF9F /* ethtoolIdentify */ = {
+			isa = PBXGroup;
+			children = (
+				9ABDEBAC1D1F01CD00BEAF9F /* addEthtoolIdentify.sh */,
+				9ABDEBAD1D1F01CD00BEAF9F /* buildNetUdevRules.sh.diff */,
+			);
+			path = ethtoolIdentify;
+			sourceTree = "<group>";
+		};
+		9ABDEBAE1D1F01CD00BEAF9F /* tcpOnlyPenTrap */ = {
+			isa = PBXGroup;
+			children = (
+				9ABDEBAF1D1F01CD00BEAF9F /* addTCPOnlyPenTrap.sh */,
+				9ABDEBB01D1F01CD00BEAF9F /* netmon.conf.default.diff */,
+				9ABDEBB11D1F01CD00BEAF9F /* netmon.conf.diff */,
+				9ABDEBB21D1F01CD00BEAF9F /* netmon.sh.diff */,
+			);
+			path = tcpOnlyPenTrap;
+			sourceTree = "<group>";
+		};
+		9ABDEBB31D1F01CD00BEAF9F /* virtualTap */ = {
+			isa = PBXGroup;
+			children = (
+				9ABDEBB41D1F01CD00BEAF9F /* addExperimentalVirtualTap.sh */,
+				9ABDEBB51D1F01CD00BEAF9F /* bridgeNICs */,
+				9ABDEBB61D1F01CD00BEAF9F /* bridgeNICs.sh */,
+				9ABDEBB71D1F01CD00BEAF9F /* disableMonitor.sh.diff */,
+				9ABDEBB81D1F01CD00BEAF9F /* enableMonitor.sh.diff */,
+				9ABDEBB91D1F01CD00BEAF9F /* netmon.conf.diff */,
+				9ABDEBBA1D1F01CD00BEAF9F /* netmon.sh.diff */,
+				9ABDEBBB1D1F01CD00BEAF9F /* startMonitor.sh.diff */,
+				9ABDEBBC1D1F01CD00BEAF9F /* stopMonitor.sh.diff */,
+			);
+			path = virtualTap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		9ABDEB6A1D1F016400BEAF9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+			};
+			buildConfigurationList = 9ABDEB6D1D1F016400BEAF9F /* Build configuration list for PBXProject "networkMonitor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9ABDEB691D1F016400BEAF9F;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		9ABDEB6E1D1F016400BEAF9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		9ABDEB6F1D1F016400BEAF9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9ABDEB6D1D1F016400BEAF9F /* Build configuration list for PBXProject "networkMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ABDEB6E1D1F016400BEAF9F /* Debug */,
+				9ABDEB6F1D1F016400BEAF9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9ABDEB6A1D1F016400BEAF9F /* Project object */;
+}

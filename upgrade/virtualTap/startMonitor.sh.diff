@@ -1,0 +1,25 @@
+--- startMonitor.sh.orig	2009-05-20 14:22:05.000000000 -0400
++++ startMonitor.sh	2009-05-20 14:26:50.000000000 -0400
+@@ -1,8 +1,21 @@
+ #! /bin/bash
+ # Author: Matthew A. Kucenski
+ 
++# Read options and common commands from the configuration file
++CONF="/usr/local/etc/netmon.conf"
++if [ -r "$CONF" ]; then
++	. "$CONF"
++else
++	echo "`basename "$0"`: Unable to read configuration file: $CONF"
++	exit 2
++fi
++
+ echo "Starting netmon services..."
+-/etc/init.d/bondNICs start
++if [ ${PASSTHRU-FALSE} == "TRUE" ]; then
++	/etc/init.d/bridgeNICs start
++else
++	/etc/init.d/bondNICs start
++fi
+ /etc/init.d/netmonwatch start
+ /etc/init.d/netmon start
+ 

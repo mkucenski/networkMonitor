@@ -1,0 +1,8 @@
+--- blacklist.orig	2007-12-07 01:04:08.000000000 -0500
++++ blacklist	2007-12-07 01:16:39.000000000 -0500
+@@ -60,3 +60,5 @@
+ blacklist wdt
+ blacklist wdt_pci
+ 
++# disable IPv6
++blacklist ipv6

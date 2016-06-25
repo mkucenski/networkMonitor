@@ -1,0 +1,32 @@
+--- ./menu.lst.orig	2007-12-07 01:03:07.000000000 -0500
++++ /boot/grub/menu.lst	2007-12-10 09:28:23.000000000 -0500
+@@ -113,17 +113,26 @@
+ ## can be true or false
+ # updatedefaultentry=false
+ 
++serial --unit=0 --speed=115200 --word=8 --parity=no --stop=1
++terminal --timeout=10 serial console
++
+ ## ## End Default Options ##
+ 
+ title		Debian GNU/Linux, kernel 2.6.18-5-686
+ root		(hd0,0)
+-kernel		/boot/vmlinuz-2.6.18-5-686 root=/dev/sda1 ro 
++kernel		/boot/vmlinuz-2.6.18-5-686 root=/dev/sda1 ro console=tty0 console=ttyS0,115200n8
++initrd		/boot/initrd.img-2.6.18-5-686
++savedefault
++
++title		Debian GNU/Linux, kernel 2.6.18-5-686 (console single-user mode)
++root		(hd0,0)
++kernel		/boot/vmlinuz-2.6.18-5-686 root=/dev/sda1 ro console=tty0 single
+ initrd		/boot/initrd.img-2.6.18-5-686
+ savedefault
+ 
+-title		Debian GNU/Linux, kernel 2.6.18-5-686 (single-user mode)
++title		Debian GNU/Linux, kernel 2.6.18-5-686 (serial single-user mode)
+ root		(hd0,0)
+-kernel		/boot/vmlinuz-2.6.18-5-686 root=/dev/sda1 ro single
++kernel		/boot/vmlinuz-2.6.18-5-686 root=/dev/sda1 ro console=ttyS0,115200n8 single
+ initrd		/boot/initrd.img-2.6.18-5-686
+ savedefault
+ 

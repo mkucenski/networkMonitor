@@ -1,0 +1,11 @@
+--- inittab.orig	2007-12-07 01:03:42.000000000 -0500
++++ inittab	2007-12-07 01:12:17.000000000 -0500
+@@ -60,7 +60,7 @@
+ 
+ # Example how to put a getty on a serial line (for a terminal)
+ #
+-#T0:23:respawn:/sbin/getty -L ttyS0 9600 vt100
++T0:23:respawn:/sbin/getty -L ttyS0 115200 vt100
+ #T1:23:respawn:/sbin/getty -L ttyS1 9600 vt100
+ 
+ # Example how to put a getty on a modem line.

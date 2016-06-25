@@ -1,0 +1,16 @@
+--- stopMonitor.sh.orig	2009-05-20 14:21:56.000000000 -0400
++++ stopMonitor.sh	2009-05-20 14:26:42.000000000 -0400
+@@ -5,5 +5,12 @@
+ /etc/init.d/netmon stop
+ sleep 1
+ /etc/init.d/netmonwatch stop
+-/etc/init.d/bondNICs stop
++
++if ifconfig bridge0 > /dev/null 2>&1; then
++	/etc/init.d/bridgeNICs stop
++fi
++
++if ifconfig bond0 > /dev/null 2>&1; then
++	/etc/init.d/bondNICs stop
++fi
+ 

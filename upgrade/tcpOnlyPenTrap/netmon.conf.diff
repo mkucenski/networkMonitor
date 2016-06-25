@@ -1,0 +1,9 @@
+--- netmon.conf.orig	2009-04-10 08:05:23.000000000 -0400
++++ netmon.conf	2009-04-10 08:06:54.000000000 -0400
+@@ -12,2 +12,6 @@
+ 
++# TCP Only Pen Register and Trap/Trace Mode. Must also enable
++# PENTRAP mode above for this to take effect.
++#TCPONLYPENTRAP=TRUE
++
+ # Filter captured packets (man tcpdump for details)

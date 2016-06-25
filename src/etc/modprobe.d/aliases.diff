@@ -1,0 +1,13 @@
+--- aliases.orig	2007-12-07 01:03:58.000000000 -0500
++++ aliases	2007-12-07 01:16:23.000000000 -0500
+@@ -14,7 +14,9 @@
+ alias net-pf-7  bridge
+ alias net-pf-8  atm
+ alias net-pf-9  x25
+-alias net-pf-10 ipv6
++#alias net-pf-10 ipv6
++alias net-pf-10 off
++alias ipv6 off
+ alias net-pf-11 rose
+ alias net-pf-12 decnet
+ # 13 NETBEUI

@@ -1,0 +1,6 @@
+--- fstab.orig	2008-09-17 15:08:25.000000000 +0000
++++ fstab	2008-09-17 15:05:02.000000000 +0000
+@@ -6,2 +6,3 @@
+ /dev/scd0       /media/cdrom0   udf,iso9660 user,noauto     0       0
+ /dev/scd0       /media/floppy0  auto    rw,user,noauto  0       0
++LABEL=/media/data	/media/data	ext3	defaults	0	0
